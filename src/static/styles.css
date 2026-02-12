@@ -171,6 +171,10 @@ button:hover {
   color: #555;
   transition: all 0.3s ease;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 
 .participants-list li:hover {
@@ -208,6 +212,26 @@ button:hover {
 
 .participants-list::-webkit-scrollbar-thumb:hover {
   background: #3949ab;
+}
+
+/* Delete button styling */
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: transform 0.2s;
+  min-width: auto;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+  background-color: transparent;
+}
+
+.participant-email {
+  flex: 1;
 }
 
 footer {
